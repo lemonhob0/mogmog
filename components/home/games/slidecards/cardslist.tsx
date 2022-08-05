@@ -87,6 +87,7 @@ const Card: FunctionComponent<{
     <li>
       <div className={Style.image}>
         <Image
+          alt={title}
           layout="fill"
           src={`https://drive.google.com/uc?export=view&id=${imgUrl}`}
         />

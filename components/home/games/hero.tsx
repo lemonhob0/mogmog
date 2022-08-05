@@ -7,7 +7,7 @@ const GameHero: FunctionComponent = () => {
       <div className={Style.hero}>
         <Image
           objectFit="cover"
-          alt="Brand logo"
+          alt="game hero"
           layout="fill"
           src="/gamehero.jpg"
         />

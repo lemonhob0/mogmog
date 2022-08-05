@@ -169,7 +169,7 @@ const Card: FunctionComponent<{
 
   return (
     <li onMouseLeave={leave} onMouseEnter={changeIndex}>
-      <Page imgId={imgId} freePages={freePages} index={index} />
+      <Page title={title} imgId={imgId} freePages={freePages} index={index} />
       <Info
         title={title}
         sub={sub}
@@ -185,11 +185,13 @@ const Page: FunctionComponent<{
   imgId: string;
   freePages: string[];
   index: number | null;
-}> = ({ imgId, freePages, index }) => {
+  title: string;
+}> = ({ title, imgId, freePages, index }) => {
   return (
     <div className={Style.page_container}>
       <div className={Style.image}>
         <Image
+          alt={title}
           layout="fill"
           src={`https://drive.google.com/uc?export=view&id=${imgId}`}
         />
@@ -204,6 +206,7 @@ const Page: FunctionComponent<{
           >
             <div className={Style.image}>
               <Image
+                alt={`${title}_${i}`}
                 layout="fill"
                 src={`https://drive.google.com/uc?export=view&id=${pageId}`}
               />

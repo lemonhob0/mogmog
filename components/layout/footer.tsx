@@ -35,7 +35,7 @@ const Footer: FunctionComponent = () => {
           </div>
         </div>
         <div className={Style.image}>
-          <Image layout="fill" src="/logo.png" />
+          <Image alt="Brand Logo" layout="fill" src="/logo.png" />
         </div>
       </article>
       <p>All Copyright goes to me</p>

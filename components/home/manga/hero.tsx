@@ -7,7 +7,7 @@ const AnimeHero: FunctionComponent = () => {
       <div className={Style.hero}>
         <Image
           objectFit="cover"
-          alt="Brand logo"
+          alt="Manga logo"
           layout="fill"
           src="/anime.jpg"
         />

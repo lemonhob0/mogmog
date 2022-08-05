@@ -32,7 +32,7 @@ const Logo: FunctionComponent = () => {
   return (
     <Link href={"/"}>
       <div className={Style.logo}>
-        <Image layout="fill" src={"/logo.png"} />
+        <Image alt={"Brand logo"} layout="fill" src={"/logo.png"} />
       </div>
     </Link>
   );
