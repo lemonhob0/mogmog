@@ -165,7 +165,7 @@ const Card: FunctionComponent<{
   useEffect(() => {
     if (index === null) return () => {};
     changeIndex();
-  }, [index]);
+  }, [index, changeIndex]);
 
   return (
     <li onMouseLeave={leave} onMouseEnter={changeIndex}>

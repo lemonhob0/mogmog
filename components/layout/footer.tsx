@@ -25,7 +25,7 @@ const Footer: FunctionComponent = () => {
             </ul>
           </div>
           <div>
-            <h3>Don't know</h3>
+            <h3>Don know</h3>
             <ul>
               <li>link1</li>
               <li>link2</li>
